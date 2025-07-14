@@ -74,7 +74,7 @@ async def startup_event():
         logger.info(f"Ensured directory exists: {directory}")
     
     # Log the output directory path
-    output_dir = Path(r"C:\Users\vibol.rim.INTERLOGISTICS\Pictures\EKYC Test image after decode base 64 to image")
+    output_dir = Path("outputs")
     output_dir.mkdir(parents=True, exist_ok=True)
     logger.info(f"Output directory: {output_dir}")
 
