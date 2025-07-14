@@ -24,8 +24,8 @@ class ImageService:
         """Initialize the service and create necessary directories."""
         create_directories()
         self.uploads_dir = Path("uploads")
-        # Updated output directory to user's specified path
-        self.outputs_dir = Path(r"C:\Users\vibol.rim.INTERLOGISTICS\Pictures\EKYC Test image after decode base 64 to image")
+        # Output directory within the project
+        self.outputs_dir = Path("outputs")
         
         # Ensure the output directory exists
         self.outputs_dir.mkdir(parents=True, exist_ok=True)

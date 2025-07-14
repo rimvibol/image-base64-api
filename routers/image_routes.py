@@ -152,4 +152,27 @@ async def health_check():
         "status": "healthy",
         "message": "Image Base64 API is running",
         "version": "1.0.0"
+    }
+
+
+@router.get(
+    "/hello",
+    status_code=status.HTTP_200_OK,
+    summary="Hello endpoint",
+    description="Simple hello endpoint to test the API."
+)
+async def hello():
+    """
+    Hello endpoint for testing purposes.
+    
+    Returns:
+        JSON response with a hello message
+    """
+    return {
+        "message": "Hello! Welcome to the Image Base64 API",
+        "endpoints": {
+            "encode": "/api/v1/encode-image",
+            "decode": "/api/v1/decode-base64",
+            "health": "/api/v1/health"
+        }
     } 
