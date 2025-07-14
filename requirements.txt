@@ -3,4 +3,5 @@ uvicorn[standard]
 python-multipart
 pydantic
 Pillow
-python-dotenv 
+python-dotenv
+gunicorn
